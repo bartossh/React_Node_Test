@@ -23,3 +23,6 @@ There is a vournability issue in storing user and token. Local storage is not sa
 - Data in local storage is stored in plain text. If someone gains access to the user's device, they can read the data directly.
 - Data in local storage does not expire automatically. If a token is compromised, it can be used indefinitely unless explicitly cleared.
 - While local storage is isolated by origin, any script running on the same origin can access it. This includes third-party libraries or compromised dependencies.
+
+## Notes about not working components
+The advance search isn't working correctly in my opinion due to problems in `setGetTagValues` that I skipped fixing.
